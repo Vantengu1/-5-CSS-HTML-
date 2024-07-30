@@ -1,0 +1,117 @@
+@import url('/style/var.css');
+
+.form__card {
+    position: absolute;
+    width: 300px;
+    height: 500px;
+    margin-top: 20px;
+    padding: 40px;
+    background: var(--bg);
+    box-sizing: border-box;
+    box-shadow: 0 8px 10px #161616;
+    border-radius: 7px;
+    font-family: var(--Merriweather);
+}
+
+.form__group input[type='radio'][id='ciber']:checked ~ .form__card {
+    font-family: "Pixelify Sans", sans-serif;
+}
+
+.form__group input[type='radio'][id='ciber']:checked ~ .form__card {
+    --bg: var(--ciber-color);
+    --color: var(--classic-color);
+    --second-color: var(--ciber-second-color);
+}
+
+.form__group input[type='radio'][id='classic']:checked ~ .form__card {
+    --bg: var(--classic-color);
+    --color: var(--ciber-color);
+    --second-color: var(--classic-second-color);
+}
+
+.form__card h2 {
+    margin: 0 0 40px;
+    padding: 0;
+    color: #000;
+    text-align: center;
+}
+
+.form__card .user {
+    position: relative;
+    padding-bottom: 30px;
+}
+
+.form__card .user input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #000;
+    margin-bottom: 20px;
+    border: none;
+    border-bottom: 1px solid #000;
+    outline: none;
+    background: transparent;
+}
+
+.form__card .user label {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: black;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.form__card .user:nth-child(2) label {
+    top: -30px;
+}
+
+.form__card .user:nth-child(2) input {
+    width: 90px;
+    margin: 10px 10px 0 0;
+    border: 1px solid rgb(0, 217, 255);
+    border-radius: 5px;
+    color: #fff;
+    background-color: var(--ciber-second-color);
+    box-shadow: 0 1px 2px #000;
+}
+
+.form__card .user input:focus ~ label,
+.form__card .user input:valid ~ label  {
+    top: -20px;
+}
+
+.form__group input[type='radio'][id='ciber']:checked ~ .form__card .user:nth-child(2) input:focus {
+    background-color: rgb(53, 53, 53);
+    cursor: pointer;
+}
+
+.form__group input[type='radio'][id='classic']:checked ~ .form__card .user:nth-child(2) input:focus {
+    background-color: rgb(173, 22, 22);
+    cursor: pointer;
+}
+
+.form__card .user:nth-child(2) input:focus ~ label {
+    top: -30px;
+    left: 0px;
+    color: black;
+}
+
+.form__card form button {
+    position: relative;
+    display: inline-block;
+    padding: 5px 25px;
+    margin: auto;
+    color: var(--second-color);
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.2s;
+    letter-spacing: 2px;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 0 1px 2px black;
+    background-color: antiquewhite;
+}

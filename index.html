@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/style/reset.css">
+        <link rel="stylesheet" href="/style/radio.css">
+        <link rel="stylesheet" href="/style/style.css">
+        <link rel="stylesheet" href="/style/form.css">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Pixelify+Sans:wght@400..700&display=swap');
+        </style>
+        <title>Зачетная работа по модулю №5</title>
+    </head>
+    <body>
+        <main class="main">
+            <div class="container main__container">
+                <div class="form main__form">
+                    <div class="form__group">
+                        <input id="classic" type="radio" name="theme" value="classic" checked />
+                        <label for="classic" class="label-radio">Classic</label>
+                        <input id="ciber" type="radio" name="theme" value="ciber" checked />
+                        <label for="ciber" class="label-radio">CiberPunk</label>
+                        <div class="form__card">
+                            <h2>Welcom</h2>
+                            <form id="my_form">
+                                <div class="user">
+                                    <input id="name" type="text" name="" required="" />
+                                    <label>What's your name?</label>
+                                </div>
+                                <div class="user">
+                                    <input id="yes" type="button" name="theme" value="Yes" checked />
+                                    <input id="no" type="button" name="theme" value="No" checked />
+                                    <label>Do you traveling?</label>
+                                </div>
+                                <div class="user">
+                                    <input id="email" type="email" />
+                                    <label for="email">Plaese, write your email!</label>
+                                </div>
+                                <button id="btn" type="submit">Submit</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <script src="script.js"></script>
+    </body>
+</html>

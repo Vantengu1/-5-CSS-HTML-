@@ -1,0 +1,30 @@
+@import url('/style/var.css');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Merriweather", serif;
+    font-weight: 700;
+    font-style: normal;
+    padding-top: 100px;
+}
+
+label[for="ciber"] {
+    font-family: "Pixelify Sans", sans-serif;
+    font-size: 18px;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.form__group  > label {
+    margin-left: 22px;
+}

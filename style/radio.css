@@ -1,0 +1,50 @@
+@import url('/style/var.css');
+
+.form__group{
+    display: inline-block;
+    overflow: hidden;
+}
+
+.form__group input[type='radio'] {
+    display: none;
+}
+
+.form__group .label-radio {
+    display: inline-block;
+    cursor: pointer;
+    padding: 10px 20px;
+    line-break: 34px;
+    border-right: none;
+    user-select: none;
+}
+
+/* Checked */
+.form__group #classic:checked + .label-radio {
+    background: #dbb495;
+}
+
+.form__group #ciber:checked + .label-radio {
+    background: #fffb04;
+}
+
+/* Hover */
+.form__group label:hover {
+    transform: translateX(1px);
+    transform: translateY(1px);
+}
+
+#yes:hover, #no:hover {
+    transform: translateX(1px);
+    transform: translateY(1px);
+}
+.form__card form a:hover {
+    transform: translateX(1px);
+    transform: translateY(1px);
+}
+
+/* Disabled */
+.form__group input[type='radio']:disabled + .label-radio {
+    background: #efefef;
+    color: #666;
+}
+
